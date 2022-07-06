@@ -55,4 +55,7 @@ function draw() {
 	textSize(18);
 	fill(0);
 	text("Area: " + area + "px" + " (" + round(area*0.07,3) + " mmˆ2)",width-235,height-23);
+
+	console.log("The area of the white figure: " + area + "px" + " (" + area*0.0007 + ")" + "cm2");
+	console.log("Percentage of area occupied by the figure: " +  round(area*100/n_throwing) + "%");
 }
