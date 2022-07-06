@@ -7,7 +7,6 @@ let point_sz = 4;
 const xs = [];
 const ys = [];
 
-
 function setup() {
 	createCanvas(600,600);
 }
