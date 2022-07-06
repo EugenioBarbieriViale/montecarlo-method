@@ -30,7 +30,7 @@ class Montecarlo:
 
             if self.dice_1 == self.dice_2:
                 #self.balance += 4*self.bet
-                self.balance.append(self.balance[-1] + 4 * self.bet)
+                self.balance.append(self.balance[-1] + 5 * self.bet)
                 self.n_win += 1
             else:
                 self.balance.append(self.balance[-1] - self.bet)
@@ -58,7 +58,7 @@ class Montecarlo:
 
         plt.show()
 
-simulation = Montecarlo(100,1)
+simulation = Montecarlo(1000,1)
 simulation.calc_balance()
 simulation.repeat_simulation()
 simulation.render()
