@@ -4,12 +4,10 @@ import numpy as np
 N = 80000
 radius = 1
 
-# Create circle
 angles = np.linspace(0, np.pi/2, 100)
 circle_x = radius * np.cos(angles)
 circle_y = radius * np.sin(angles)
 
-# Draw points
 x = np.random.rand(N) * radius
 y = np.random.rand(N) * np.sqrt(radius**2 - x**2)
 
